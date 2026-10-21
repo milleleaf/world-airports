@@ -8,7 +8,7 @@ import json, os
 from huggingface_hub import HfApi, batch_bucket_files, create_bucket
 import manifest, sources
 
-REPO = 'alreadyopen/world-airports'
+REPO = 'milleleaf/world-airports'
 DATASET_FILES = ['index.json', 'airports.parquet', 'runways.parquet', 'navaids.parquet', 'airport-frequencies.parquet',
                  'countries.csv', 'regions.csv', 'airports.pmtiles', 'runways.pmtiles']
 BUCKET_FILES = ['index.json', 'airports.pmtiles', 'runways.pmtiles', 'airports.parquet', 'runways.parquet']   # the map reads these

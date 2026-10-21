@@ -12,7 +12,7 @@ tags:
 # World airports
 
 Every airport, heliport, seaplane base and closed airfield in OurAirports, with its runways, navaids and radio frequencies,
-rebuilt weekly by [AlreadyOpen/world-airports](https://github.com/AlreadyOpen/world-airports). Every row and every field of
+rebuilt weekly by [AlreadyOpen/world-airports](https://github.com/milleleaf/world-airports). Every row and every field of
 the source is kept.
 
 | File | Holds |
