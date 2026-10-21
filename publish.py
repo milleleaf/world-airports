@@ -12,7 +12,7 @@ REPO = 'milleleaf/world-airports'
 DATASET_FILES = ['index.json', 'airports.parquet', 'runways.parquet', 'navaids.parquet', 'airport-frequencies.parquet',
                  'countries.csv', 'regions.csv', 'airports.pmtiles', 'runways.pmtiles']
 BUCKET_FILES = ['index.json', 'airports.pmtiles', 'runways.pmtiles', 'airports.parquet', 'runways.parquet']   # the map reads these
-KAGGLE = ('helenkwok/world-airports', 'AlreadyOpen: world airports')            # mirrored by kaggle_mirror.py (title 6-50 chars)
+KAGGLE = ('helenkwok/world-airports', 'Milleleaf: world airports')            # mirrored by kaggle_mirror.py (title 6-50 chars)
 
 def main():
     o = lambda f: os.path.join(sources.OUT, f); idx = json.load(open(o('index.json')))

@@ -21,7 +21,7 @@ AIRPORTS_MAXZOOM, RUNWAYS_MINZOOM, RUNWAYS_MAXZOOM = 10, 8, 13
 def download(name):
     """fetched every run (about 20 MB in all, the source changes daily); the cache copy is replaced only when it changed"""
     p = os.path.join(sources.CACHE, name + '.csv')
-    req = urllib.request.Request(BASE + name + '.csv', headers={'User-Agent': 'AlreadyOpen world-airports (https://github.com/milleleaf/world-airports)'})
+    req = urllib.request.Request(BASE + name + '.csv', headers={'User-Agent': 'Milleleaf world-airports (https://github.com/milleleaf/world-airports)'})
     with urllib.request.urlopen(req, timeout=300) as r:
         b = r.read()
     if not os.path.exists(p) or open(p, 'rb').read() != b:
